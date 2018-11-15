@@ -6,6 +6,7 @@ from django.utils.datastructures import MultiValueDictKeyError
 
 from app.models import *
 def index(requst):
+
     address = ''
     try:
         address=requst.GET['address']
