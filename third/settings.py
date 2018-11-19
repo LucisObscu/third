@@ -25,7 +25,7 @@ SECRET_KEY = 'psjscp)82r+(afb9kok&aplyd4f92q%kqmnyce6ysil(qxdyij'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','.pythonanywhere.com']
 
 
 # Application definition
