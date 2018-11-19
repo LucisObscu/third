@@ -1,0 +1,9 @@
+<form action="/app/{{address.id}}/save" method="post">
+    {%csrf_token%}
+주소 :
+<input type="text" name="s"
+        value="{{address.address}}">
+<input type="submit">
+</form>
+<br>
+{{address.address}}

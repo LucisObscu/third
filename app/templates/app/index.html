@@ -1,0 +1,5 @@
+{%for a in address%}
+    <a href="{% url 'choice' a.id %}">
+        {{a.address}}<br>
+    </a>
+{%endfor%}
