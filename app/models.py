@@ -11,3 +11,17 @@ class Address(models.Model):
 
     def __str__(self):
         return self.address
+
+class House(models.Model):
+    number = models.IntegerField()
+    address = models.ForeignKey(Address,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.number) + self.address.address
+
+# Address.objects.create(address='부산시청')
+#  a=Address.objects.get(address='부산시청')
+#House.objects.create(number=101,address=a)
+
+#h=House.objects.get(number=101)
+# h.address
